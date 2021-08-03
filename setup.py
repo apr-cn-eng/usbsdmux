@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
 
 from setuptools import setup
+import usbsdmux
 import fastentrypoints
 
 setup(
     name="usbsdmux",
-    version="0.2.1",
+    version=usbsdmux.VERSION,
     author="Chris Fiege",
     author_email="python@pengutronix.de",
     license="LGPL-2.1-or-later",

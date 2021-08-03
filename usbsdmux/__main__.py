@@ -23,10 +23,12 @@ import errno
 import sys
 
 from .usbsdmux import UsbSdMux
+import usbsdmux
 
 def main():
     parser = argparse.ArgumentParser(
-        formatter_class=argparse.RawTextHelpFormatter
+        formatter_class=argparse.RawTextHelpFormatter,
+        description=f"USB-SD-Mux control utility\nVersion {usbsdmux.VERSION}",
     )
 
     parser.add_argument("sg", metavar="SG", help="/dev/sg* to use")
